@@ -1,0 +1,50 @@
+{
+  "attestation_policy": {
+    "kind": "nitro",
+    "max_skew_seconds": 300,
+    "pcr0": "235a6ce6caece4a95fa8fe31492a134e012d238155c84ac091f791525f4cd4395226cc64817825d388e750c39c9b6077",
+    "pcr8": "4c6a5893613c4f782ec876b0961a723328f9e69a4c41002c43a974c6838513597290ac76d9762d6ad078596e0378110c"
+  },
+  "audience": "production",
+  "aws_nitro_root_sha256": "641a0321a3e244efe456463195d606317ed7cdcc3c1756e09893f3c68f79bb5b",
+  "gateway": "https://anamnesis.chat",
+  "model": {
+    "license": "MIT",
+    "repository": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181"
+  },
+  "qualification": "Canonical non-debug boot, dedicated-user/KMS handoff, eight functional checks, K2, enclave-only and parent-service restarts, and full host reboot passed on m6a for this exact signed artifact. Independently authenticated publication remains required.",
+  "release_id": "nitro-1f3ab276c8f1-production-signer-r2",
+  "schema": "anamnesis.memory.client-release.v1",
+  "signing_certificate": {
+    "algorithm": "ecdsa-with-SHA384",
+    "not_after": "Nov 21 17:54:15 2036 GMT",
+    "not_before": "Nov 24 17:54:15 2026 GMT"
+  },
+  "tokenizer": {
+    "bytes": 17098108,
+    "sha256": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08"
+  },
+  "trust_bootstrap": "Authenticate this installed client from the governed immutable source/release log independently of the runtime. Same-origin downloads alone are not an independent trust anchor.",
+  "weights": {
+    "bytes": 2271064456,
+    "sha256": "993b2248881724788dcab8c644a91dfd63584b6e5604ff2037cb5541e1e38e7e"
+  },
+  "worker_artifact": {
+    "docker_config_digest": "sha256:19a75f01776e27ee1fae3dbd196702a80f1de853238ee220091b4c817bf43f52",
+    "eif_sha256": "1e0d552f4de934e5252618949b00a83b34a63c3fb5ec2127e65c1f38100d0d89",
+    "eif_signed": true,
+    "launch_settings_sha256": "3416ae991166758788fa682027918b9a16121c2f4c7236481fa9cb74c1a3d7df",
+    "model_manifest_sha256": "7340e7d59c7d383b2b8b2959410aed233982e5de53a2b561a3577673340e7954",
+    "oci_manifest_digest": "sha256:4b01d82154897b6f33fa7cc016bde4cfa816de330f86be06b9f6d8406c7f9fec",
+    "pcr0": "235a6ce6caece4a95fa8fe31492a134e012d238155c84ac091f791525f4cd4395226cc64817825d388e750c39c9b6077",
+    "pcr1": "4b4d5b3661b3efc12920900c80e126e4ce783c522de6c02a2a5bf7af3a2b9327b86776f188e4be1c1c404a129dbda493",
+    "pcr2": "399e07300abcffe70bd08bcc5fbb35839b1207fa0efdf878b22a60962e16f5e149baa467642bda910724408b8b51274d",
+    "pcr8": "4c6a5893613c4f782ec876b0961a723328f9e69a4c41002c43a974c6838513597290ac76d9762d6ad078596e0378110c",
+    "release_receipt": "eif:235a6ce6caece4a95fa8fe31492a134e012d238155c84ac091f791525f4cd4395226cc64817825d388e750c39c9b6077;pcr8:4c6a5893613c4f782ec876b0961a723328f9e69a4c41002c43a974c6838513597290ac76d9762d6ad078596e0378110c;commit:1f3ab276c8f1;image:4b01d82154897b6f33fa7cc016bde4cfa816de330f86be06b9f6d8406c7f9fec;tokenizer:21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08"
+  },
+  "worker_source": {
+    "repository": "elfege/0_MOBIUS.ANAMNESIS.CHAT",
+    "revision": "1f3ab276c8f1f226988a2542b42902dbda1702cc"
+  }
+}

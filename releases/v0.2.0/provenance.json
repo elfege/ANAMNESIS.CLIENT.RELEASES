@@ -1,0 +1,15 @@
+{
+  "audience": "production",
+  "client_source_tree_sha256": "786882df781b8967506c7b073f799cf65a248ab41dec726735b024e445350b6c",
+  "client_version": "0.2.0",
+  "independent_publication": "required; same-origin download is not an independent trust anchor",
+  "release_version": "v0.3.0",
+  "schema": "anamnesis.memory.client-distribution.v1",
+  "source_path": "clients/python",
+  "source_repository": "elfege/0_MOBIUS.ANAMNESIS.CHAT",
+  "source_revision": "be1098aadd9be532f2f6acb86d571e13031dcb5e",
+  "source_zip_sha256": "2aafee38353e80fc1ddfe6a5dab62f37bdbf546ddd5a0c66f5a70a5594d5c388",
+  "wheel_sha256": "8ca17a02ed1be9d6f8d32a185d666823369406e06fb0ce256dd8c40ef40e5790",
+  "worker_release_id": "nitro-1f3ab276c8f1-production-signer-r2",
+  "worker_release_record_sha256": "4288b00eaa51082f730140124f0c72c718ed54c185221be4c526439273db3649"
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anamnesis-chat-client"
+version = "0.2.0"
+description = "Minimal anamnesis.chat protected memory client: holds the secret S, seals contract 4a envelopes, imports Claude Code sessions"
+requires-python = ">=3.12"
+# The client holds the tenant secret S, so it carries no server code and the smallest dependency set:
+# envelope crypto, the HTTP transport and (optionally) the operating-system keyring.
+dependencies = ["cryptography==50.0.2", "httpx==0.28.1"]
+
+[project.optional-dependencies]
+keyring = ["keyring>=25"]
+
+[project.scripts]
+anamnesis-memory = "anamnesis_chat_client.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+anamnesis_chat_client = ["bip39_english.txt", "public_release.json", "AWS_NitroEnclaves_Root-G1.pem"]
